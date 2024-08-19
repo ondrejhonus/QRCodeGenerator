@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>QR Code Generator</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-  </head>
-  <body>
-  </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="goHome" onclick="window.location.assign('https://ondrejhonus.com')">
+    <p class="home"><i class="fas fa-home"></i> Home</p>
+  </div>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="form">
+            <p class="is-size-3 text">Insert QR code contents</p>
+            <input type="text" name="QRCodeInput" id="QRCodeInput" class="input is-medium m-3" placeholder="Text/URL">
+            <button type="submit" onclick="QRSubmit()" class="button is-medium">Submit</button>
+            <div class="code m-5"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Ondřej Honus</p>
+    </footer>
+
+
+</body>
+<script src="index.js"></script>
+
 </html>
